@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--#include virtual="navbar.html" -->
 
 <head>
     <meta charset="UTF-8">
     <title>iD Website</title>
     <link rel="icon" type="image/jpg" href="../assets/images/favicon.png" />
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
 <body>
@@ -32,27 +33,63 @@
             <h2>Data Scientist</h2>
         </div>
 
-        <div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#AboutMe">About Me</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                    <li><a href="#">Travels</a></li>
-                    <li><a href="#">Design concepts</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <!-- NavBar called by JavaScript-->
+        <script src="navbar.js"></script>
+        <div id="navbar"></div>
+        <!-- NavBar called by JavaScript-->
+        
     </header>
 
     <section
-        style="background-image: url(../assets/images/background_section1.png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        style="background-image: url(../assets/images/projects_background.png); background-size: cover; background-position: center; background-repeat: no-repeat;">
         <div class="section-text">
             <h1>Projects</span></h1>
-            <a id="ProjectLink" href="Projects.html"><img src="../assets/images/projects.png" alt="MyProjects">My Projects</a>
+            <a id="ProjectLink" href="Projects.html"><img src="../assets/images/projects.png" alt="MyProjects">My
+                Projects</a>
             <h2>Data</h2>
         </div>
+    </section>
+
+
+    <section
+        style="background-image: url(../assets/images/travels_background.png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="travels-section">
+            <h1>My Travels</span></h1>
+            <a id="TravelsLink"><img src="../assets/images/travels-icon.png" alt="MyProjects">My Travels</a>
+            <h2>As a huge travel enthusiast, I would like to centralize and share my main Travels</h2>
+        </div>
+    </section>
+
+    <section
+        style="background-image: url(../assets/images/background_colors.png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="section-design">
+            <h1>Design Concepts</span></h1>
+            <a id="DesignsLink"><img src="../assets/images/favicon.svg" alt="MyDesigns">Design Concepts</a>
+            <h2>I share in this section some of my design concepts which I realized with softwares like After Effect,
+                Cinema4D, Blender, Photoshop and more.. </h2>
+        </div>
+    </section>
+
+
+    <section
+        style="background-image: url(../assets/images/favicon_rgbs.svg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="about-section">
+            <h1>About Me</span></h1>
+            <a id="AboutLink"><img src="../assets/images/favicon.svg" alt="AboutMe">About Me</a>
+            <h2>My name is iDwes, I am a Data Scientist and I am passionate about Data, Travels, Cars, High-Tech, Design
+                and video games </h2>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="contact-section">
+            <h1>Contact</span></h1>
+            <a id="ContactLink"><img src="../assets/images/favicon_xl.png" alt="MyContact">Contact</a>
+            <h2>Feel free to contact me for any question or collaboration</h2>
+        </div>
+    </section>
+
 </body>
 
 </html>

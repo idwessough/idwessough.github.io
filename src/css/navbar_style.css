@@ -1,0 +1,25 @@
+svg {
+    display: flex;
+    position: absolute;
+}
+
+.navbar ul {
+    /* padding: 0px; */
+    text-align: center; /* TEXTE HORIZONTALEMENT */
+    list-style-type: none;
+}
+
+.navbar li {
+    display: inline-block;
+    min-width: 150px;
+}
+
+.navbar a {
+    color: #393c41;
+    font-size: 14px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}

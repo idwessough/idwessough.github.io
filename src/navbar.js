@@ -21,50 +21,13 @@
 //         </div>
 //     </div>
 // `;
-
-fetch('navbar.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('navbar').innerHTML = data;
-  });
-
 document.addEventListener('DOMContentLoaded', (event) => {
-    let lastScrollTop = 0;
-    const navbar = document.querySelector('.navbar');
-
-    console.log("Launch Navbar.js");
-    const navbarHeight = navbar.offsetHeight; // Get the dynamic height of the navbar
-
-    window.addEventListener('scroll', function() {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-        if (currentScroll > lastScrollTop) {
-            // Scrolling down
-            navbar.style.top = `-${navbarHeight}px`; // Use navbarHeight here
-        } else {
-            // Scrolling up
-            navbar.style.top = '0px';
-        }
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-    }, false);
-}); 
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    const navbar = document.querySelector('.navbar');
-    const bodyBefore = document.createElement('div');
-    bodyBefore.id = 'body-before';
-    document.body.insertBefore(bodyBefore, document.body.firstChild);
-
-    function adjustPseudoElementHeight() {
-        const navbarHeight = navbar.offsetHeight;
-        bodyBefore.style.height = navbarHeight + 'px';
-    }
-
-    window.addEventListener('resize', adjustPseudoElementHeight);
-    adjustPseudoElementHeight(); // Initial adjustment
-});
-
-
-
+    fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+    });
+})
 // // Path: src\footer.js
 // // fetch footer from html and replace it with the footer from the template
 // const footer = document.querySelector('.footer');

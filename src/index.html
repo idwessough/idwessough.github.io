@@ -18,11 +18,53 @@
     <header>
 
         <!-- NavBar called by JavaScript-->
-        <script src="navbar.js"></script>
+        <!-- <script src="navbar.js"></script> -->
         <!--Define the navbar container, Include the JavaScript code that fetches the navbar and inserts it into the container -->
-        <div id="navbar"></div>
+        <!-- <div class="navbar"></div> -->
+
+        
 
     </header>
+    
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="../assets/images/favicon_rgbs.svg" alt="Logo">
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item drop">
+                <a href="#" class="nav-link">Projects</a>
+                <div class="dropdown">
+                    <a href="#">DataLake</a>
+                    <a href="#">Data Science</a>
+                    <a href="#">Autonomous Vehicle</a>
+                    <a href="#">My Game</a>
+                </div>
+            </li>
+            <li class="nav-item drop">
+                <a href="#" class="nav-link">Travels</a>
+                <div class="dropdown">
+                    <a href="#">Japan</a>
+                    <a href="#">Canada</a>
+                    <a href="#">Malaysia</a>
+                    <a href="#">Bali</a>
+                    <a href="#">Singapore</a>
+                    <a href="#">United States</a>
+                    <a href="#">Tenerife</a>
+                    <a href="#">Spain</a>
+                    <a href="#">Greece</a>
+                    <a href="#">Italy</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">My Game</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
+</nav> 
+    
+    
 
     <section class="home">
         <div class="description">
@@ -182,11 +224,11 @@
           <li class="next">
             <ion-icon class="arrow" name="caret-forward-outline"></ion-icon>
           </li>
-        </ul>
-        <script src="navbar.js"></script> 
+        </ul> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
           <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body>
         <script src="vanilla-tilt.js"></script>  -->
+        <script src="navbar_effects.js"></script>
         <script src="home.js"></script>
       </section> 
       
@@ -247,6 +289,8 @@
           <h2>Feel free to contact me for any question or collaboration</h2>
       </div>
   </section>
+
+ 
 
 </body>
 </html>

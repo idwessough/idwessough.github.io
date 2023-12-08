@@ -3,17 +3,45 @@ body {
   margin: 0; 
    /* background: linear-gradient(45deg, #6e48aa, #9d50bb, #ff6e7f, #ecaa8e);Colorful background */
 }
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px; /* Set this to the height of your navbar */
+  background-color: rgb(67, 69, 112); /* Your desired color */
+  z-index: -1; /* Ensure it's behind other content */
+}
+
+#body-before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(67, 69, 112, 0.7); /* Your desired color */
+  z-index: -1; /* Ensure it's behind other content */
+}
+
 
 .navbar {
   margin: 0; 
   font-family: Arial, sans-serif;
   background-color: rgba(255, 255, 255, 0.42); /* Semi-transparent background */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(17px);
+  position: sticky;
+  z-index: 1000;
+  top: 0; 
+  transition: top 0.42s ease;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar-top {
+  background-color: rgba(67, 69, 112, 0.7); /* Adjust this color as needed */
 }
 
 .navbar-logo img {
